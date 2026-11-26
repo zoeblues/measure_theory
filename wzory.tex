@@ -1,0 +1,52 @@
+Topologia:
+Rodzinę $\mathcal{O}$ podzbiorów zbioru $X$ nazywamy **topologią w zbiorze $X$**, jeżeli:
+1. $\emptyset \in \mathcal{O},\ X \in \mathcal{O}$,
+2. $V_i \in \mathcal{O},\ i = 1, 2, \dots, n \implies V_1 \cap V_2 \cap \dots \cap V_n \in \mathcal{O}$,
+3. $\{V_\alpha\}$ – dowolna rodzina zbiorów w $\mathcal{O} \implies \bigcup_\alpha V_\alpha \in \mathcal{O}$.
+
+Przestrzeń $X$ z topologią $\mathcal{O}$, a formalnie parę $(X, \tau)$, nazywamy **przestrzenią topologiczną**, a elementy rodziny $\mathcal{O}$ – **zbiorami otwartymi w $X$**.
+---
+Algebra:
+Rodzinę $\mathcal{M} \subset 2^X$ podzbiorów przestrzeni $X$ nazywamy **algebrą** (ciałem zbiorów), gdy:
+1. $X \in \mathcal{M}$,
+2. $A \in \mathcal{M} \Rightarrow A' \in \mathcal{M}$,
+3. $A, B \in \mathcal{M} \Rightarrow A \cup B \in \mathcal{M}$.
+
+Z powyższych warunków wynika zamkniętość na różnicę, skończone sumy i skończone przekroje.
+---
+Sigma-algebra:
+Rodzinę $\mathcal{M} \subset 2^X$ podzbiorów przestrzeni $X$ nazywamy **$\sigma$-algebrą** (lub **$\sigma$-ciałem**), gdy:
+1. $X \in \mathcal{M}$,
+2. $A \in \mathcal{M} \Rightarrow A' \in \mathcal{M}$,
+3. $A_n \in \mathcal{M},\ n = 1, 2, 3, \dots \Rightarrow \bigcup_{n=1}^\infty A_n \in \mathcal{M}$.
+
+Z prawa De Morgana wynika także zamkniętość na przeliczalne przekroje.
+---
+Zbiór potęgowy:
+Jeżeli $X$ jest przestrzenią, to możemy zdefiniować maksymalną rodzinę jego podzbiorów:
+$$2^X := \{A : A \subset X\}.$$
+$2^X$ nazywamy **zbiorem potęgowym**. Jeżeli $|X| = n$, to $2^X$ składa się z $2^n$ podzbiorów przestrzeni $X$.
+---
+Sigma-algebra generowana:
+Niech $\mathcal{M} \subset 2^X$ będzie rodziną podzbiorów $X$. Rodzinę
+$$\bigcap \{\mathcal{A} : \mathcal{M} \subset \mathcal{A},\ \mathcal{A} - \sigma\text{-algebra}\}$$
+nazywamy **$\sigma$-algebrą generowaną przez rodzinę $\mathcal{M}$**. Będziemy ją oznaczać $\sigma(\mathcal{M})$ lub $\mathcal{M}^*$.
+
+Własności:
+1. jeśli $\mathcal{M}$ jest $\sigma$-algebrą, to $\mathcal{M}^* = \mathcal{M}$,
+2. $(\mathcal{F}^*)^* = \mathcal{F}^*$,
+3. jeśli $\mathcal{F}_1 \subset \mathcal{F}_2 \subset 2^X$, to $\mathcal{F}_1^* \subset \mathcal{F}_2^*$.
+---
+Przestrzeń mierzalna:
+Jeżeli $\mathcal{M} \subset 2^X$ jest $\sigma$-algebrą, to parę $(X, \mathcal{M})$ nazywamy **przestrzenią mierzalną**, a elementy $\mathcal{M}$ – **zbiorami mierzalnymi**.
+---
+Zbiory borelowskie:
+Załóżmy, że $(X, \mathcal{O}_X)$ jest przestrzenią topologiczną. Istnieje najmniejsza $\sigma$-algebra $\mathcal{B}_X$ w $X$ taka, że każdy otwarty podzbiór przestrzeni $X$ należy do $\mathcal{B}_X$.
+
+Elementy rodziny $\mathcal{B}_X$ nazywamy **zbiorami borelowskimi w $X$**, tzn.
+$$\mathcal{O}_X^* = \mathcal{B}_X.$$
+---
+Rozszerzony zbiór liczb rzeczywistych:
+Rozszerzony zbiór liczb rzeczywistych ma postać:
+$$\overline{\mathbb{R}} = [-\infty, +\infty] = \mathbb{R} \cup \{-\infty, +\infty\}.$$
+Naturalne uporządkowanie zachowuje porządek na $\mathbb{R}$, przy czym $-\infty < x < +\infty$ dla każdego $x \in \mathbb{R}$.
