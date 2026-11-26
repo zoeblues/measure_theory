@@ -7,7 +7,7 @@ import streamlit as st
 # ---------------------------------------------------------------------------
 # Konfiguracja strony
 # ---------------------------------------------------------------------------
-st.set_page_config(page_title="Rodziny Zbiorów – Infografika Interaktywna", layout="wide")
+st.set_page_config(page_title="Rodziny Zbiorów - Infografika Interaktywna", layout="wide")
 
 st.markdown(
     """
@@ -37,9 +37,9 @@ Topologia:
 Rodzinę $\\mathcal{O}$ podzbiorów zbioru $X$ nazywamy **topologią w zbiorze $X$**, jeżeli:
 1. $\\emptyset \\in \\mathcal{O},\\ X \\in \\mathcal{O}$,
 2. $V_i \\in \\mathcal{O},\\ i = 1, 2, \\dots, n \\implies V_1 \\cap V_2 \\cap \\dots \\cap V_n \\in \\mathcal{O}$,
-3. $\\{V_\\alpha\\}$ – dowolna rodzina zbiorów w $\\mathcal{O} \\implies \\bigcup_\\alpha V_\\alpha \\in \\mathcal{O}$.
+3. $\\{V_\\alpha\\}$ - dowolna rodzina zbiorów w $\\mathcal{O} \\implies \\bigcup_\\alpha V_\\alpha \\in \\mathcal{O}$.
 
-Przestrzeń $X$ z topologią $\\mathcal{O}$, a formalnie parę $(X, \\tau)$, nazywamy **przestrzenią topologiczną**, a elementy rodziny $\\mathcal{O}$ – **zbiorami otwartymi w $X$**.
+Przestrzeń $X$ z topologią $\\mathcal{O}$, a formalnie parę $(X, \\tau)$, nazywamy **przestrzenią topologiczną**, a elementy rodziny $\\mathcal{O}$ - **zbiorami otwartymi w $X$**.
 ---
 Algebra:
 Rodzinę $\\mathcal{M} \\subset 2^X$ podzbiorów przestrzeni $X$ nazywamy **algebrą** (ciałem zbiorów), gdy:
@@ -73,7 +73,7 @@ Własności:
 3. jeśli $\\mathcal{F}_1 \\subset \\mathcal{F}_2 \\subset 2^X$, to $\\mathcal{F}_1^* \\subset \\mathcal{F}_2^*$.
 ---
 Przestrzeń mierzalna:
-Jeżeli $\\mathcal{M} \\subset 2^X$ jest $\\sigma$-algebrą, to parę $(X, \\mathcal{M})$ nazywamy **przestrzenią mierzalną**, a elementy $\\mathcal{M}$ – **zbiorami mierzalnymi**.
+Jeżeli $\\mathcal{M} \\subset 2^X$ jest $\\sigma$-algebrą, to parę $(X, \\mathcal{M})$ nazywamy **przestrzenią mierzalną**, a elementy $\\mathcal{M}$ - **zbiorami mierzalnymi**.
 ---
 Zbiory borelowskie:
 Załóżmy, że $(X, \\mathcal{O}_X)$ jest przestrzenią topologiczną. Istnieje najmniejsza $\\sigma$-algebra $\\mathcal{B}_X$ w $X$ taka, że każdy otwarty podzbiór przestrzeni $X$ należy do $\\mathcal{B}_X$.
@@ -89,7 +89,6 @@ Naturalne uporządkowanie zachowuje porządek na $\\mathbb{R}$, przy czym $-\\in
 
 
 def read_optional(filename: str):
-    """Czyta plik obok app.py; zwraca None, jeśli go brak."""
     path = BASE_DIR / filename
     if not path.exists():
         return None
@@ -295,7 +294,7 @@ if pokaz_daty:
     st.divider()
 
 # ---------------------------------------------------------------------------
-# SEKCJA 4: wzory (zawsze zgodne ze skryptem)
+# SEKCJA 4: wzory 
 # ---------------------------------------------------------------------------
 if pokaz_wzory:
     st.subheader("🧾 Najważniejsze definicje i wzory")
@@ -333,7 +332,7 @@ if pokaz_wzory:
     st.divider()
 
 # ---------------------------------------------------------------------------
-# SEKCJA 5: Kawiarnia Szkocka / szkoła lwowska
+# SEKCJA 5: Kawiarnia Szkocka
 # ---------------------------------------------------------------------------
 if pokaz_kawiarnie:
     st.subheader("☕ Kawiarnia Szkocka i lwowska szkoła matematyczna")
@@ -354,37 +353,37 @@ wydany później w tłumaczeniu angielskim pod redakcją R. D. Mauldina.
     st.markdown("### Kluczowe postacie i ich wkład")
     osoby = [
         (
-            "Stefan Banach (1892–1945)",
+            "Stefan Banach (1892-1945)",
             "Twórca nowoczesnej analizy funkcjonalnej (przestrzenie Banacha, *Théorie des opérations "
             "linéaires*, 1932). W pracy *Sur le problème de la mesure* (1923) wykazał istnienie skończenie "
             "addytywnej, niezmienniczej miary na wszystkich ograniczonych podzbiorach prostej i płaszczyzny. "
-            "Z Alfredem Tarskim (warszawianinem) opublikował w 1924 r. paradoks Banacha–Tarskiego "
+            "Z Alfredem Tarskim (warszawianinem) opublikował w 1924 r. paradoks Banacha-Tarskiego "
             "(wymaga aksjomatu wyboru, działa w ℝ³ i wyżej). Z Kuratowskim (1929) badał uogólnienia problemu miary.",
         ),
         (
-            "Hugo Steinhaus (1887–1972)",
-            "Współzałożyciel szkoły lwowskiej. Twierdzenie Banacha–Steinhausa (1927), twierdzenie Steinhausa "
+            "Hugo Steinhaus (1887-1972)",
+            "Współzałożyciel szkoły lwowskiej. Twierdzenie Banacha-Steinhausa (1927), twierdzenie Steinhausa "
             "o sumie zbiorów o dodatniej mierze, prace o szeregach losowych i podstawach rachunku "
             "prawdopodobieństwa opartych na mierze (1923, 1930) — jeden z prekursorów ujęcia Kołmogorowa (1933). "
         
         ),
         (
-            "Stanisław Ulam (1909–1984)",
+            "Stanisław Ulam (1909-1984)",
             "W pracy *Zur Masstheorie in der allgemeinen Mengenlehre* (1930) zapoczątkował badania nad "
             "**kardynałami mierzalnymi** (miara przeliczalnie addytywna na zbiorach nieprzeliczalnych); "
             "pokazał m.in., że na ω₁ nie ma nietrywialnej σ-addytywnej miary znikającej na punktach "
             "(macierze Ulama). Później pracował w USA (Monte Carlo, Projekt Manhattan).",
         ),
         (
-            "Stanisław Saks (1897–1942)",
-            "Związany głównie z Warszawą, współpracował ze Lwowem (twierdzenie Banacha–Saksa, 1930). "
+            "Stanisław Saks (1897-1942)",
+            "Związany głównie z Warszawą, współpracował ze Lwowem (twierdzenie Banacha-Saksa, 1930). "
             "Jego monografia *Théorie de l'intégrale* (1933; wyd. ang. *Theory of the Integral*, 1937) "
             "stała się klasycznym podręcznikiem teorii miary i całki.",
         ),
         (
-            "Juliusz Schauder (1899–1943) i Stanisław Mazur (1905–1981)",
-            "Schauder: baza Schaudera, twierdzenie o punkcie stałym (1930), metoda Leraya–Schaudera dla "
-            "równań różniczkowych. Mazur: twierdzenie Mazura–Ulama (1932), algebry Banacha, gra Banacha–Mazura "
+            "Juliusz Schauder (1899-1943) i Stanisław Mazur (1905-1981)",
+            "Schauder: baza Schaudera, twierdzenie o punkcie stałym (1930), metoda Leraya-Schaudera dla "
+            "równań różniczkowych. Mazur: twierdzenie Mazura-Ulama (1932), algebry Banacha, gra Banacha-Mazura "
             "i problem bazy (rozwiązany negatywnie przez Enfla w 1972 r.). Ich główny wkład to analiza "
             "funkcjonalna, a nie sama teoria miary.",
         ),
@@ -395,3 +394,10 @@ wydany później w tłumaczeniu angielskim pod redakcją R. D. Mauldina.
             with st.container(border=True):
                 st.markdown(f"**{osoba}**")
                 st.markdown(opis)
+
+st.divider()
+st.caption(
+    "**Oświadczenie:** Przy generowaniu kodu aplikacji korzystałam z narzędzi GenAI. "
+    "Koncepcja aplikacji, sprawdzenie przedstawionych wzorów "
+    "oraz wykonanie projektu są mojego autorstwa."
+)
