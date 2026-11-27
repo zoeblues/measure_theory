@@ -3,6 +3,9 @@
 Interaktywna aplikacja pomaga powtórzyć rodziny zbiorów, algebry, σ-algebry, topologie i zbiory borelowskie.
 
 ## Pobranie i uruchomienie
+https://measuretheory.streamlit.app/ - link do interkatywnej infografiki  
+
+lub
 
 Wymagania: Git, Python 3.14+ i [`uv`](https://docs.astral.sh/uv/).
 
@@ -12,8 +15,6 @@ cd measure_theory
 uv sync
 uv run streamlit run app.py
 ```
-
-Streamlit wyświetli adres aplikacji w terminalu (zwykle <http://localhost:8501>).
 
 ## Jak się uczyć
 
